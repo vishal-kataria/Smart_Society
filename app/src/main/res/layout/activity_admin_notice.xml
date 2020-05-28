@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin_user_details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ls"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/grad"
+                android:ems="10"
+                android:hint="Header"
+                android:textColorHint="@color/colorPrimary">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/grad"
+                android:ems="10"
+                android:hint="Subject"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/details"
+                android:layout_width="411dp"
+                android:layout_height="117dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/grad"
+                android:ems="10"
+                android:hint="Enter Details"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/grad"
+                android:ems="10"
+                android:hint="Sign By"
+                android:textColorHint="@color/colorPrimary" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="5dp"
+            android:layout_height="98dp" >
+
+            <Button
+                android:id="@+id/btnSubNot"
+                android:layout_width="140dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:text="Add Notice" />
+
+            <Button
+                android:id="@+id/deletebtn1"
+                android:layout_width="140dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:text="Delete all notice" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/viewallbtn2"
+            android:layout_width="290dp"
+            android:layout_height="90dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_margin="5dp"
+            android:text="View all Notices" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

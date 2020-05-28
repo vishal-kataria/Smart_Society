@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Admin_meeting">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grad"
+        android:hint="Meeting Name"
+        android:id="@+id/meetingtxtname"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:hint="Description"
+        android:layout_below="@id/meetingtxtname"
+        android:background="@drawable/grad"
+        android:id="@+id/meetingtxt"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meetingtxt"
+        android:text="Arrange New Meeting"
+        android:id="@+id/btnarrange"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnarrange"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            android:id="@+id/view"
+            android:text="View Meetings"
+            android:background="@color/colorPrimary"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Delete Meeting"
+            android:id="@+id/delete"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

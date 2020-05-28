@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/socitylay"
+    tools:context=".Admin_login">
+    <ImageView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/editTextEmailadmin"
+            android:layout_width="290dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Admin-id"
+
+            android:textColorHint="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextpasswordadmin"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad"
+            android:layout_below="@+id/editTextEmailadmin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Enter Password"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btnLoginadmin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextpasswordadmin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:text="Login"
+
+
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

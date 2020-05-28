@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smart_society">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="adjustResize"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@menu/adminlogin" />
+
+        <activity android:name=".User_Notice" />
+        <activity android:name=".User_Complain" />
+        <activity android:name=".User_directory" />
+        <activity android:name=".Admin_user_complain" />
+        <activity android:name=".Admin_meeting" />
+        <activity android:name=".Admin_notice" />
+        <activity android:name=".Admin_user_details" />
+        <activity android:name=".Admin_edit_maintenance" />
+        <activity android:name=".Admin_Maintenance" />
+        <activity android:name=".Admin_Homepage" />
+        <activity android:name=".User_Maintenance" />
+        <activity android:name=".User_Homepage" />
+        <activity android:name=".User_registration" />
+        <activity android:name=".Admin_login" />
+        <activity android:name=".User_login" />
+        <activity
+            android:name=".Logo_Screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

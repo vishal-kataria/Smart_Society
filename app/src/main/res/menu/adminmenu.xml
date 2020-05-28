@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Admin Login"
+        app:showAsAction="always"
+        android:id="@+id/adminmenu"/>
+
+    <group>
+        <item android:title="Contact Admin"
+            android:icon="@drawable/ic_local_phone_black_24dp"
+            app:showAsAction="always">
+            <menu>
+                <item android:title="Chairman"
+                    android:id="@+id/secretary1"/>
+                <item android:title="Secretary"
+                    android:id="@+id/secretary2" />
+                <item android:title="Treasurer"
+                    android:id="@+id/secretary3" />
+            </menu>
+        </item>
+    </group>
+</menu>
